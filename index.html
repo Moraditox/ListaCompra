@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <title>Lista de la Compra</title>
+</head>
+<body>
+    <h1>LISTA PARA HACER LA COMPRA</h1>
+    <form action="">
+        <label for="">Buscador</label>
+        <input type="text" name="search-product" id="search-product">
+    </form>
+    <table id="products">
+        <tr id="encabezado">
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+    </table>
+
+    <h2>PRODUCTOS EN LA LISTA</h2>
+    <div id="list">
+        <table id="products-list">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="product-list-body">
+                <!-- Aquí se agregarán los productos dinámicamente -->
+            </tbody>
+            <tfoot>
+                <tr id="total-row">
+                    <td colspan="2"><strong>Total</strong></td>
+                    <td id="total">0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
